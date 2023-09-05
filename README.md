@@ -30,6 +30,13 @@ Support for Linux-based operating systems is not planned at this time.
 
 ----
 
+#### Notes:
+
+1. There are no guarantees with this tool, so **use it at your own risk**. I'm a student and this is my first C# application, so there may be all sorts of bugs that I haven't uncovered yet. I am not responsible for broken game installations.
+2. As of writing this, the tool does not back up your existing Blade and Sorcery appmanifest file. This will be addressed in a future version, but, for now, make sure to manually back up your appmanifest. This file is found in the top-level `steamapps` directory where your Blade and Sorcery installation is found; for example, if Blade and Sorcery is installed in the default Steam game directory, the file you'd want to back up is located at `C:\Program Files (x86)\Steam\steamapps\appmanifest_629730.acf`.
+
+----
+
 #### Known Issues:
 
 1. The application or its installer may trigger false positive reports with built-in or third-party anti-virus programs. This is because neither are signed with a code signing certificate. Hopefully, the open-source nature of this program will ease folks' concerns.
