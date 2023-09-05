@@ -23,3 +23,9 @@ Then, simply launch Blade and Sorcery Update Skipper whenever Steam shows an upd
 #### Compiling Blade and Sorcery Update Skipper
 
 v1.0.0 is compiled using Visual Studio 2022. The solution (.sln file) can be opened in Visual Studio with the default installation of .NET desktop development tools, and Blade and Sorcery Update Skipper can be built against the Release target.
+
+----
+
+#### TO-DO (for future versions):
+1. Fix check for manifest ID length to use range from 16 to 19 (inclusive).
+2. Automatically backup existing appmanifest file in case program generates errors.
