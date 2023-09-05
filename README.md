@@ -29,3 +29,4 @@ v1.0.0 is compiled using Visual Studio 2022. The solution (.sln file) can be ope
 #### TO-DO (for future versions):
 1. Fix check for manifest ID length to use range from 16 to 19 (inclusive).
 2. Automatically backup existing appmanifest file in case program generates errors.
+3. Make README better (maybe add a picture or two).
