@@ -46,7 +46,7 @@ Support for Linux-based operating systems is not planned at this time.
 
 #### TO-DO (for future versions):
 1. Fix check for manifest ID length to use range from 16 to 19 (inclusive).
-2. Automatically backup existing appmanifest file in case program generates errors.
+2. Automatically backup existing appmanifest file in case program generates errors (provide file picker for backup location).
 3. Detect whether `\r\n` is being used and correct it if so.
 4. Make a better app icon.
 5. Add a picture or two to the README.
