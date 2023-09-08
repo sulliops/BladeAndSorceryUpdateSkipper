@@ -239,11 +239,11 @@
             this.Controls.Add(this.GameLocationBrowseButton);
             this.Controls.Add(this.GameLocationTextBox);
             this.Controls.Add(this.GameLocationLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(512, 464);
             this.MinimumSize = new System.Drawing.Size(512, 464);
             this.Name = "MainWindow";
-            this.ShowIcon = false;
             this.Text = "Blade and Sorcery Update Skipper";
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.ResumeLayout(false);
