@@ -74,6 +74,7 @@
             this.GameLocationBrowseButton.TabIndex = 2;
             this.GameLocationBrowseButton.Text = "Browse...";
             this.GameLocationBrowseButton.UseVisualStyleBackColor = true;
+            this.GameLocationBrowseButton.Click += new System.EventHandler(this.GameLocationBrowseButton_Click);
             // 
             // IntroInfoLabel
             // 
@@ -157,6 +158,7 @@
             this.LatestManifestIDOpenSteamDBButton.TabIndex = 11;
             this.LatestManifestIDOpenSteamDBButton.Text = "Open SteamDB";
             this.LatestManifestIDOpenSteamDBButton.UseVisualStyleBackColor = true;
+            this.LatestManifestIDOpenSteamDBButton.Click += new System.EventHandler(this.LatestManifestIDOpenSteamDBButton_Click);
             // 
             // ApplyWarningLabel
             // 
@@ -177,6 +179,7 @@
             this.ApplyChangesButton.TabIndex = 13;
             this.ApplyChangesButton.Text = "Apply Changes";
             this.ApplyChangesButton.UseVisualStyleBackColor = true;
+            this.ApplyChangesButton.Click += new System.EventHandler(this.ApplyChangesButton_Click);
             // 
             // BackupLocationLabel
             // 
@@ -242,6 +245,7 @@
             this.Name = "MainWindow";
             this.ShowIcon = false;
             this.Text = "Blade and Sorcery Update Skipper";
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
