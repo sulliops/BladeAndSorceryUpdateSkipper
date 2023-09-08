@@ -71,6 +71,10 @@ namespace Blade_and_Sorcery_Update_Skipper
 
             }
 
+            // Set the BackupLocationTextBox text to default location of C:\{currentUser}\Documents\Blade and Sorcery Update Skipper\
+            // Reference: https://stackoverflow.com/questions/30872229/how-can-i-get-the-location-of-a-users-documents-directory
+            BackupLocationTextBox.Text = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
         }
 
         // Function that gets and returns the Steam installation location
@@ -284,6 +288,28 @@ namespace Blade_and_Sorcery_Update_Skipper
 
         }
 
+        // Function that opens a FolderBrowserDialog and allows the user to manually select an appmanifest backup location
+        private void BackupLocationBrowseButton_Click(object sender, EventArgs e)
+        {
+
+            // Create a new FolderBrowserDialog and set the text value of GameLocationTextBox to the dialog result
+            // Reference: https://stackoverflow.com/questions/11624298/how-do-i-use-openfiledialog-to-select-a-folder
+            using (FolderBrowserDialog browser = new FolderBrowserDialog())
+            {
+
+                DialogResult result = browser.ShowDialog();
+
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(browser.SelectedPath))
+                {
+
+                    GameLocationTextBox.Text = browser.SelectedPath;
+
+                }
+
+            }
+
+        }
+
         // Function that checks runtime conditions and applies changes to appmanifest
         private void ApplyChangesButton_Click(object sender, EventArgs e)
         {
@@ -384,7 +410,7 @@ namespace Blade_and_Sorcery_Update_Skipper
 
             // Make sure a valid manifest ID was provided, if not show error
             // Reference: https://stackoverflow.com/questions/10845820/check-the-length-of-integer-variable
-            if (!(manifestID.ToString().Length >= 16))
+            if (!(manifestID.ToString().Length >= 16 && manifestID.ToString().Length <= 19))
             {
 
                 // Show error message
@@ -399,6 +425,35 @@ namespace Blade_and_Sorcery_Update_Skipper
                 return;
 
             }
+
+            // Make sure that an appmanifest backup location was provided
+            if (string.IsNullOrWhiteSpace(BackupLocationTextBox.Text))
+            {
+
+                // Show error message
+                // Reference: https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.messagebox.show?view=windowsdesktop-7.0#system-windows-forms-messagebox-show(system-windows-forms-iwin32window-system-string-system-string-system-windows-forms-messageboxbuttons-system-windows-forms-messageboxicon)
+                MessageBox.Show(this,
+                                "An appmanifest backup location was not provided. Please select a backup location and try again.",
+                                "ERROR: Missing backup location",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+
+                // Return function early
+                return;
+
+            }
+
+            // Store the appmanifest backup location
+            string backupLocationPath = BackupLocationTextBox.Text.Trim() + "\\Blade and Sorcery Update Skipper";
+
+            // Determine if a sub-folder for appmanifest backups already exists, and create one if not
+            // Reference: https://stackoverflow.com/questions/9065598/if-a-folder-does-not-exist-create-it
+            System.IO.Directory.CreateDirectory(backupLocationPath);
+
+            // Copy the existing appmanifest to the backup location, appending a timestamp to the file name
+            // Reference: https://learn.microsoft.com/en-us/dotnet/api/system.io.file.copy?view=net-7.0
+            // Reference: https://stackoverflow.com/questions/17632584/how-to-get-the-unix-timestamp-in-c-sharp
+            File.Copy(appManifestPath, backupLocationPath + "\\appmanifest_629730_" + ((uint)DateTimeOffset.Now.ToUnixTimeSeconds()).ToString() + ".acf");
 
             // Show warning message before continuing and store result of click
             // Reference: https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.messagebox.show?view=windowsdesktop-7.0#system-windows-forms-messagebox-show(system-windows-forms-iwin32window-system-string-system-string-system-windows-forms-messageboxbuttons-system-windows-forms-messageboxicon)
@@ -469,6 +524,10 @@ namespace Blade_and_Sorcery_Update_Skipper
                 return;
 
             }
+
+            // Replace all instances of the Windows-style new line sequence "\r\n" with the Unix-style '\n' character
+            // Reference: https://learn.microsoft.com/en-us/dotnet/api/system.string.replacelineendings?view=net-7.0
+            entireFileText = entireFileText.ReplaceLineEndings("\n");
 
             // Split existing file contents by new line
             // Reference: https://www.techiedelight.com/split-string-on-newlines-csharp/

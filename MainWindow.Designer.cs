@@ -29,180 +29,222 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            GameLocationLabel = new Label();
-            GameLocationTextBox = new TextBox();
-            GameLocationBrowseButton = new Button();
-            IntroInfoLabel = new Label();
-            IntroWarningLabel = new Label();
-            linkLabel1 = new LinkLabel();
-            DownloadWarningLabel = new Label();
-            DownloadLinkLabel = new LinkLabel();
-            DividerLabel1 = new Label();
-            LatestManifestIDLabel = new Label();
-            LatestManifestIDTextBox = new TextBox();
-            LatestManifestIDOpenSteamDBButton = new Button();
-            ApplyWarningLabel = new Label();
-            ApplyChangesButton = new Button();
-            SuspendLayout();
+            this.GameLocationLabel = new System.Windows.Forms.Label();
+            this.GameLocationTextBox = new System.Windows.Forms.TextBox();
+            this.GameLocationBrowseButton = new System.Windows.Forms.Button();
+            this.IntroInfoLabel = new System.Windows.Forms.Label();
+            this.IntroWarningLabel = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.DownloadWarningLabel = new System.Windows.Forms.Label();
+            this.DownloadLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.DividerLabel1 = new System.Windows.Forms.Label();
+            this.LatestManifestIDLabel = new System.Windows.Forms.Label();
+            this.LatestManifestIDTextBox = new System.Windows.Forms.TextBox();
+            this.LatestManifestIDOpenSteamDBButton = new System.Windows.Forms.Button();
+            this.ApplyWarningLabel = new System.Windows.Forms.Label();
+            this.ApplyChangesButton = new System.Windows.Forms.Button();
+            this.BackupLocationLabel = new System.Windows.Forms.Label();
+            this.BackupLocationTextBox = new System.Windows.Forms.TextBox();
+            this.BackupLocationBrowseButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
             // 
             // GameLocationLabel
             // 
-            GameLocationLabel.AutoSize = true;
-            GameLocationLabel.Location = new Point(12, 171);
-            GameLocationLabel.Name = "GameLocationLabel";
-            GameLocationLabel.Size = new Size(199, 15);
-            GameLocationLabel.TabIndex = 0;
-            GameLocationLabel.Text = "Blade and Sorcery installation folder:";
+            this.GameLocationLabel.AutoSize = true;
+            this.GameLocationLabel.Location = new System.Drawing.Point(12, 171);
+            this.GameLocationLabel.Name = "GameLocationLabel";
+            this.GameLocationLabel.Size = new System.Drawing.Size(199, 15);
+            this.GameLocationLabel.TabIndex = 0;
+            this.GameLocationLabel.Text = "Blade and Sorcery installation folder:";
             // 
             // GameLocationTextBox
             // 
-            GameLocationTextBox.Location = new Point(12, 189);
-            GameLocationTextBox.Name = "GameLocationTextBox";
-            GameLocationTextBox.PlaceholderText = "Click \"Browse...\" to select installation location...";
-            GameLocationTextBox.Size = new Size(391, 23);
-            GameLocationTextBox.TabIndex = 1;
+            this.GameLocationTextBox.Location = new System.Drawing.Point(12, 189);
+            this.GameLocationTextBox.Name = "GameLocationTextBox";
+            this.GameLocationTextBox.PlaceholderText = "Click \"Browse...\" to select installation location...";
+            this.GameLocationTextBox.Size = new System.Drawing.Size(391, 23);
+            this.GameLocationTextBox.TabIndex = 1;
             // 
             // GameLocationBrowseButton
             // 
-            GameLocationBrowseButton.Location = new Point(409, 189);
-            GameLocationBrowseButton.Name = "GameLocationBrowseButton";
-            GameLocationBrowseButton.Size = new Size(75, 23);
-            GameLocationBrowseButton.TabIndex = 2;
-            GameLocationBrowseButton.Text = "Browse...";
-            GameLocationBrowseButton.UseVisualStyleBackColor = true;
-            GameLocationBrowseButton.Click += GameLocationBrowseButton_Click;
+            this.GameLocationBrowseButton.Location = new System.Drawing.Point(409, 189);
+            this.GameLocationBrowseButton.Name = "GameLocationBrowseButton";
+            this.GameLocationBrowseButton.Size = new System.Drawing.Size(75, 23);
+            this.GameLocationBrowseButton.TabIndex = 2;
+            this.GameLocationBrowseButton.Text = "Browse...";
+            this.GameLocationBrowseButton.UseVisualStyleBackColor = true;
             // 
             // IntroInfoLabel
             // 
-            IntroInfoLabel.AutoSize = true;
-            IntroInfoLabel.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            IntroInfoLabel.Location = new Point(12, 49);
-            IntroInfoLabel.Name = "IntroInfoLabel";
-            IntroInfoLabel.Size = new Size(463, 60);
-            IntroInfoLabel.TabIndex = 3;
-            IntroInfoLabel.Text = resources.GetString("IntroInfoLabel.Text");
+            this.IntroInfoLabel.AutoSize = true;
+            this.IntroInfoLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.IntroInfoLabel.Location = new System.Drawing.Point(12, 49);
+            this.IntroInfoLabel.Name = "IntroInfoLabel";
+            this.IntroInfoLabel.Size = new System.Drawing.Size(463, 60);
+            this.IntroInfoLabel.TabIndex = 3;
+            this.IntroInfoLabel.Text = resources.GetString("IntroInfoLabel.Text");
             // 
             // IntroWarningLabel
             // 
-            IntroWarningLabel.AutoSize = true;
-            IntroWarningLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            IntroWarningLabel.Location = new Point(12, 9);
-            IntroWarningLabel.Name = "IntroWarningLabel";
-            IntroWarningLabel.Size = new Size(437, 30);
-            IntroWarningLabel.TabIndex = 4;
-            IntroWarningLabel.Text = "Note: This tool is only compatible with Steam-based installations of Blade and \r\nSorcery. Run this tool at your own risk.";
+            this.IntroWarningLabel.AutoSize = true;
+            this.IntroWarningLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.IntroWarningLabel.Location = new System.Drawing.Point(12, 9);
+            this.IntroWarningLabel.Name = "IntroWarningLabel";
+            this.IntroWarningLabel.Size = new System.Drawing.Size(437, 30);
+            this.IntroWarningLabel.TabIndex = 4;
+            this.IntroWarningLabel.Text = "Note: This tool is only compatible with Steam-based installations of Blade and \r\n" +
+    "Sorcery. Run this tool at your own risk.";
             // 
             // linkLabel1
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(330, 171);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(0, 15);
-            linkLabel1.TabIndex = 5;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(330, 171);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(0, 15);
+            this.linkLabel1.TabIndex = 5;
             // 
             // DownloadWarningLabel
             // 
-            DownloadWarningLabel.AutoSize = true;
-            DownloadWarningLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            DownloadWarningLabel.Location = new Point(12, 118);
-            DownloadWarningLabel.Name = "DownloadWarningLabel";
-            DownloadWarningLabel.Size = new Size(358, 15);
-            DownloadWarningLabel.TabIndex = 6;
-            DownloadWarningLabel.Text = "Make sure you downloaded this tool from its official repository:";
+            this.DownloadWarningLabel.AutoSize = true;
+            this.DownloadWarningLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.DownloadWarningLabel.Location = new System.Drawing.Point(12, 118);
+            this.DownloadWarningLabel.Name = "DownloadWarningLabel";
+            this.DownloadWarningLabel.Size = new System.Drawing.Size(358, 15);
+            this.DownloadWarningLabel.TabIndex = 6;
+            this.DownloadWarningLabel.Text = "Make sure you downloaded this tool from its official repository:";
             // 
             // DownloadLinkLabel
             // 
-            DownloadLinkLabel.AutoSize = true;
-            DownloadLinkLabel.Location = new Point(12, 133);
-            DownloadLinkLabel.Name = "DownloadLinkLabel";
-            DownloadLinkLabel.Size = new Size(326, 15);
-            DownloadLinkLabel.TabIndex = 7;
-            DownloadLinkLabel.TabStop = true;
-            DownloadLinkLabel.Text = "https://github.com/sulliops/BladeAndSorceryUpdateSkipper";
-            DownloadLinkLabel.LinkClicked += DownloadLinkLabel_LinkClicked;
+            this.DownloadLinkLabel.AutoSize = true;
+            this.DownloadLinkLabel.Location = new System.Drawing.Point(12, 133);
+            this.DownloadLinkLabel.Name = "DownloadLinkLabel";
+            this.DownloadLinkLabel.Size = new System.Drawing.Size(326, 15);
+            this.DownloadLinkLabel.TabIndex = 7;
+            this.DownloadLinkLabel.TabStop = true;
+            this.DownloadLinkLabel.Text = "https://github.com/sulliops/BladeAndSorceryUpdateSkipper";
             // 
             // DividerLabel1
             // 
-            DividerLabel1.BorderStyle = BorderStyle.Fixed3D;
-            DividerLabel1.Location = new Point(12, 160);
-            DividerLabel1.Name = "DividerLabel1";
-            DividerLabel1.Size = new Size(472, 2);
-            DividerLabel1.TabIndex = 8;
+            this.DividerLabel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DividerLabel1.Location = new System.Drawing.Point(12, 160);
+            this.DividerLabel1.Name = "DividerLabel1";
+            this.DividerLabel1.Size = new System.Drawing.Size(472, 2);
+            this.DividerLabel1.TabIndex = 8;
             // 
             // LatestManifestIDLabel
             // 
-            LatestManifestIDLabel.AutoSize = true;
-            LatestManifestIDLabel.Location = new Point(12, 224);
-            LatestManifestIDLabel.Name = "LatestManifestIDLabel";
-            LatestManifestIDLabel.Size = new Size(201, 15);
-            LatestManifestIDLabel.TabIndex = 9;
-            LatestManifestIDLabel.Text = "Latest Blade and Sorcery manifest ID:";
+            this.LatestManifestIDLabel.AutoSize = true;
+            this.LatestManifestIDLabel.Location = new System.Drawing.Point(12, 224);
+            this.LatestManifestIDLabel.Name = "LatestManifestIDLabel";
+            this.LatestManifestIDLabel.Size = new System.Drawing.Size(201, 15);
+            this.LatestManifestIDLabel.TabIndex = 9;
+            this.LatestManifestIDLabel.Text = "Latest Blade and Sorcery manifest ID:";
             // 
             // LatestManifestIDTextBox
             // 
-            LatestManifestIDTextBox.Location = new Point(12, 242);
-            LatestManifestIDTextBox.Name = "LatestManifestIDTextBox";
-            LatestManifestIDTextBox.PlaceholderText = "Click \"Open SteamDB...\" and copy/paste the latest manifest ID...";
-            LatestManifestIDTextBox.Size = new Size(358, 23);
-            LatestManifestIDTextBox.TabIndex = 10;
+            this.LatestManifestIDTextBox.Location = new System.Drawing.Point(12, 242);
+            this.LatestManifestIDTextBox.Name = "LatestManifestIDTextBox";
+            this.LatestManifestIDTextBox.PlaceholderText = "Click \"Open SteamDB...\" and copy/paste the latest manifest ID...";
+            this.LatestManifestIDTextBox.Size = new System.Drawing.Size(358, 23);
+            this.LatestManifestIDTextBox.TabIndex = 10;
             // 
             // LatestManifestIDOpenSteamDBButton
             // 
-            LatestManifestIDOpenSteamDBButton.Location = new Point(376, 242);
-            LatestManifestIDOpenSteamDBButton.Name = "LatestManifestIDOpenSteamDBButton";
-            LatestManifestIDOpenSteamDBButton.Size = new Size(108, 23);
-            LatestManifestIDOpenSteamDBButton.TabIndex = 11;
-            LatestManifestIDOpenSteamDBButton.Text = "Open SteamDB";
-            LatestManifestIDOpenSteamDBButton.UseVisualStyleBackColor = true;
-            LatestManifestIDOpenSteamDBButton.Click += LatestManifestIDOpenSteamDBButton_Click;
+            this.LatestManifestIDOpenSteamDBButton.Location = new System.Drawing.Point(376, 242);
+            this.LatestManifestIDOpenSteamDBButton.Name = "LatestManifestIDOpenSteamDBButton";
+            this.LatestManifestIDOpenSteamDBButton.Size = new System.Drawing.Size(108, 23);
+            this.LatestManifestIDOpenSteamDBButton.TabIndex = 11;
+            this.LatestManifestIDOpenSteamDBButton.Text = "Open SteamDB";
+            this.LatestManifestIDOpenSteamDBButton.UseVisualStyleBackColor = true;
             // 
             // ApplyWarningLabel
             // 
-            ApplyWarningLabel.AutoSize = true;
-            ApplyWarningLabel.Location = new Point(12, 277);
-            ApplyWarningLabel.Name = "ApplyWarningLabel";
-            ApplyWarningLabel.Size = new Size(458, 45);
-            ApplyWarningLabel.TabIndex = 12;
-            ApplyWarningLabel.Text = "Click the \"Apply Changes\" button below to apply changes to Blade and Sorcery's app \r\nmanifest. If Steam is currently running, it will be exited via the Steam console before \r\nchanges are applied.";
+            this.ApplyWarningLabel.AutoSize = true;
+            this.ApplyWarningLabel.Location = new System.Drawing.Point(12, 342);
+            this.ApplyWarningLabel.Name = "ApplyWarningLabel";
+            this.ApplyWarningLabel.Size = new System.Drawing.Size(458, 45);
+            this.ApplyWarningLabel.TabIndex = 12;
+            this.ApplyWarningLabel.Text = "Click the \"Apply Changes\" button below to apply changes to Blade and Sorcery\'s ap" +
+    "p \r\nmanifest. If Steam is currently running, it will be exited via the Steam con" +
+    "sole before \r\nchanges are applied.";
             // 
             // ApplyChangesButton
             // 
-            ApplyChangesButton.Location = new Point(12, 325);
-            ApplyChangesButton.Name = "ApplyChangesButton";
-            ApplyChangesButton.Size = new Size(472, 23);
-            ApplyChangesButton.TabIndex = 13;
-            ApplyChangesButton.Text = "Apply Changes";
-            ApplyChangesButton.UseVisualStyleBackColor = true;
-            ApplyChangesButton.Click += ApplyChangesButton_Click;
+            this.ApplyChangesButton.Location = new System.Drawing.Point(12, 390);
+            this.ApplyChangesButton.Name = "ApplyChangesButton";
+            this.ApplyChangesButton.Size = new System.Drawing.Size(472, 23);
+            this.ApplyChangesButton.TabIndex = 13;
+            this.ApplyChangesButton.Text = "Apply Changes";
+            this.ApplyChangesButton.UseVisualStyleBackColor = true;
+            // 
+            // BackupLocationLabel
+            // 
+            this.BackupLocationLabel.AutoSize = true;
+            this.BackupLocationLabel.Location = new System.Drawing.Point(12, 277);
+            this.BackupLocationLabel.Name = "BackupLocationLabel";
+            this.BackupLocationLabel.Size = new System.Drawing.Size(377, 15);
+            this.BackupLocationLabel.TabIndex = 14;
+            this.BackupLocationLabel.Text = "Existing appmanifest backup location (where a backup will be placed):";
+            // 
+            // BackupLocationTextBox
+            // 
+            this.BackupLocationTextBox.Location = new System.Drawing.Point(12, 295);
+            this.BackupLocationTextBox.Name = "BackupLocationTextBox";
+            this.BackupLocationTextBox.PlaceholderText = "Click \"Browse...\" to select backup location...";
+            this.BackupLocationTextBox.Size = new System.Drawing.Size(391, 23);
+            this.BackupLocationTextBox.TabIndex = 15;
+            // 
+            // BackupLocationBrowseButton
+            // 
+            this.BackupLocationBrowseButton.Location = new System.Drawing.Point(409, 295);
+            this.BackupLocationBrowseButton.Name = "BackupLocationBrowseButton";
+            this.BackupLocationBrowseButton.Size = new System.Drawing.Size(75, 23);
+            this.BackupLocationBrowseButton.TabIndex = 16;
+            this.BackupLocationBrowseButton.Text = "Browse...";
+            this.BackupLocationBrowseButton.UseVisualStyleBackColor = true;
+            this.BackupLocationBrowseButton.Click += new System.EventHandler(this.BackupLocationBrowseButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Location = new System.Drawing.Point(12, 331);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(472, 2);
+            this.label1.TabIndex = 17;
             // 
             // MainWindow
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(496, 361);
-            Controls.Add(ApplyChangesButton);
-            Controls.Add(ApplyWarningLabel);
-            Controls.Add(LatestManifestIDOpenSteamDBButton);
-            Controls.Add(LatestManifestIDTextBox);
-            Controls.Add(LatestManifestIDLabel);
-            Controls.Add(DividerLabel1);
-            Controls.Add(DownloadLinkLabel);
-            Controls.Add(DownloadWarningLabel);
-            Controls.Add(linkLabel1);
-            Controls.Add(IntroWarningLabel);
-            Controls.Add(IntroInfoLabel);
-            Controls.Add(GameLocationBrowseButton);
-            Controls.Add(GameLocationTextBox);
-            Controls.Add(GameLocationLabel);
-            MaximizeBox = false;
-            MaximumSize = new Size(512, 400);
-            MinimumSize = new Size(512, 400);
-            Name = "MainWindow";
-            ShowIcon = false;
-            Text = "Blade and Sorcery Update Skipper";
-            Load += MainWindow_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(496, 425);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BackupLocationBrowseButton);
+            this.Controls.Add(this.BackupLocationTextBox);
+            this.Controls.Add(this.BackupLocationLabel);
+            this.Controls.Add(this.ApplyChangesButton);
+            this.Controls.Add(this.ApplyWarningLabel);
+            this.Controls.Add(this.LatestManifestIDOpenSteamDBButton);
+            this.Controls.Add(this.LatestManifestIDTextBox);
+            this.Controls.Add(this.LatestManifestIDLabel);
+            this.Controls.Add(this.DividerLabel1);
+            this.Controls.Add(this.DownloadLinkLabel);
+            this.Controls.Add(this.DownloadWarningLabel);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.IntroWarningLabel);
+            this.Controls.Add(this.IntroInfoLabel);
+            this.Controls.Add(this.GameLocationBrowseButton);
+            this.Controls.Add(this.GameLocationTextBox);
+            this.Controls.Add(this.GameLocationLabel);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(512, 464);
+            this.MinimumSize = new System.Drawing.Size(512, 464);
+            this.Name = "MainWindow";
+            this.ShowIcon = false;
+            this.Text = "Blade and Sorcery Update Skipper";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -221,5 +263,9 @@
         private Button LatestManifestIDOpenSteamDBButton;
         private Label ApplyWarningLabel;
         private Button ApplyChangesButton;
+        private Label BackupLocationLabel;
+        private TextBox BackupLocationTextBox;
+        private Button BackupLocationBrowseButton;
+        private Label label1;
     }
 }
