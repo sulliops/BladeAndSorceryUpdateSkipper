@@ -165,15 +165,15 @@
             this.ApplyWarningLabel.AutoSize = true;
             this.ApplyWarningLabel.Location = new System.Drawing.Point(12, 342);
             this.ApplyWarningLabel.Name = "ApplyWarningLabel";
-            this.ApplyWarningLabel.Size = new System.Drawing.Size(458, 45);
+            this.ApplyWarningLabel.Size = new System.Drawing.Size(458, 30);
             this.ApplyWarningLabel.TabIndex = 16;
             this.ApplyWarningLabel.Text = "Click the \"Apply Changes\" button below to apply changes to Blade and Sorcery\'s ap" +
-    "p \r\nmanifest. If Steam is currently running, it will be exited via the Steam con" +
-    "sole before \r\nchanges are applied.";
+    "p \r\nmanifest. If Steam is currently running, it will be exited before changes ar" +
+    "e applied.";
             // 
             // ApplyChangesButton
             // 
-            this.ApplyChangesButton.Location = new System.Drawing.Point(12, 390);
+            this.ApplyChangesButton.Location = new System.Drawing.Point(12, 375);
             this.ApplyChangesButton.Name = "ApplyChangesButton";
             this.ApplyChangesButton.Size = new System.Drawing.Size(472, 23);
             this.ApplyChangesButton.TabIndex = 17;
@@ -220,7 +220,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 425);
+            this.ClientSize = new System.Drawing.Size(496, 409);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BackupLocationBrowseButton);
             this.Controls.Add(this.BackupLocationTextBox);
@@ -241,8 +241,8 @@
             this.Controls.Add(this.GameLocationLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(512, 464);
-            this.MinimumSize = new System.Drawing.Size(512, 464);
+            this.MaximumSize = new System.Drawing.Size(512, 448);
+            this.MinimumSize = new System.Drawing.Size(512, 448);
             this.Name = "MainWindow";
             this.Text = "Blade and Sorcery Update Skipper";
             this.Load += new System.EventHandler(this.MainWindow_Load);
