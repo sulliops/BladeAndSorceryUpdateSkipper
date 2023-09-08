@@ -302,7 +302,7 @@ namespace Blade_and_Sorcery_Update_Skipper
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(browser.SelectedPath))
                 {
 
-                    GameLocationTextBox.Text = browser.SelectedPath;
+                    BackupLocationTextBox.Text = browser.SelectedPath;
 
                 }
 

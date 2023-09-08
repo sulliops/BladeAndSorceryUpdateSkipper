@@ -55,7 +55,7 @@
             this.GameLocationLabel.Location = new System.Drawing.Point(12, 171);
             this.GameLocationLabel.Name = "GameLocationLabel";
             this.GameLocationLabel.Size = new System.Drawing.Size(199, 15);
-            this.GameLocationLabel.TabIndex = 0;
+            this.GameLocationLabel.TabIndex = 6;
             this.GameLocationLabel.Text = "Blade and Sorcery installation folder:";
             // 
             // GameLocationTextBox
@@ -64,14 +64,14 @@
             this.GameLocationTextBox.Name = "GameLocationTextBox";
             this.GameLocationTextBox.PlaceholderText = "Click \"Browse...\" to select installation location...";
             this.GameLocationTextBox.Size = new System.Drawing.Size(391, 23);
-            this.GameLocationTextBox.TabIndex = 1;
+            this.GameLocationTextBox.TabIndex = 7;
             // 
             // GameLocationBrowseButton
             // 
             this.GameLocationBrowseButton.Location = new System.Drawing.Point(409, 189);
             this.GameLocationBrowseButton.Name = "GameLocationBrowseButton";
             this.GameLocationBrowseButton.Size = new System.Drawing.Size(75, 23);
-            this.GameLocationBrowseButton.TabIndex = 2;
+            this.GameLocationBrowseButton.TabIndex = 8;
             this.GameLocationBrowseButton.Text = "Browse...";
             this.GameLocationBrowseButton.UseVisualStyleBackColor = true;
             this.GameLocationBrowseButton.Click += new System.EventHandler(this.GameLocationBrowseButton_Click);
@@ -83,7 +83,7 @@
             this.IntroInfoLabel.Location = new System.Drawing.Point(12, 49);
             this.IntroInfoLabel.Name = "IntroInfoLabel";
             this.IntroInfoLabel.Size = new System.Drawing.Size(463, 60);
-            this.IntroInfoLabel.TabIndex = 3;
+            this.IntroInfoLabel.TabIndex = 2;
             this.IntroInfoLabel.Text = resources.GetString("IntroInfoLabel.Text");
             // 
             // IntroWarningLabel
@@ -93,7 +93,7 @@
             this.IntroWarningLabel.Location = new System.Drawing.Point(12, 9);
             this.IntroWarningLabel.Name = "IntroWarningLabel";
             this.IntroWarningLabel.Size = new System.Drawing.Size(437, 30);
-            this.IntroWarningLabel.TabIndex = 4;
+            this.IntroWarningLabel.TabIndex = 1;
             this.IntroWarningLabel.Text = "Note: This tool is only compatible with Steam-based installations of Blade and \r\n" +
     "Sorcery. Run this tool at your own risk.";
             // 
@@ -112,7 +112,7 @@
             this.DownloadWarningLabel.Location = new System.Drawing.Point(12, 118);
             this.DownloadWarningLabel.Name = "DownloadWarningLabel";
             this.DownloadWarningLabel.Size = new System.Drawing.Size(358, 15);
-            this.DownloadWarningLabel.TabIndex = 6;
+            this.DownloadWarningLabel.TabIndex = 3;
             this.DownloadWarningLabel.Text = "Make sure you downloaded this tool from its official repository:";
             // 
             // DownloadLinkLabel
@@ -121,7 +121,7 @@
             this.DownloadLinkLabel.Location = new System.Drawing.Point(12, 133);
             this.DownloadLinkLabel.Name = "DownloadLinkLabel";
             this.DownloadLinkLabel.Size = new System.Drawing.Size(326, 15);
-            this.DownloadLinkLabel.TabIndex = 7;
+            this.DownloadLinkLabel.TabIndex = 4;
             this.DownloadLinkLabel.TabStop = true;
             this.DownloadLinkLabel.Text = "https://github.com/sulliops/BladeAndSorceryUpdateSkipper";
             // 
@@ -131,7 +131,7 @@
             this.DividerLabel1.Location = new System.Drawing.Point(12, 160);
             this.DividerLabel1.Name = "DividerLabel1";
             this.DividerLabel1.Size = new System.Drawing.Size(472, 2);
-            this.DividerLabel1.TabIndex = 8;
+            this.DividerLabel1.TabIndex = 5;
             // 
             // LatestManifestIDLabel
             // 
@@ -166,7 +166,7 @@
             this.ApplyWarningLabel.Location = new System.Drawing.Point(12, 342);
             this.ApplyWarningLabel.Name = "ApplyWarningLabel";
             this.ApplyWarningLabel.Size = new System.Drawing.Size(458, 45);
-            this.ApplyWarningLabel.TabIndex = 12;
+            this.ApplyWarningLabel.TabIndex = 16;
             this.ApplyWarningLabel.Text = "Click the \"Apply Changes\" button below to apply changes to Blade and Sorcery\'s ap" +
     "p \r\nmanifest. If Steam is currently running, it will be exited via the Steam con" +
     "sole before \r\nchanges are applied.";
@@ -176,7 +176,7 @@
             this.ApplyChangesButton.Location = new System.Drawing.Point(12, 390);
             this.ApplyChangesButton.Name = "ApplyChangesButton";
             this.ApplyChangesButton.Size = new System.Drawing.Size(472, 23);
-            this.ApplyChangesButton.TabIndex = 13;
+            this.ApplyChangesButton.TabIndex = 17;
             this.ApplyChangesButton.Text = "Apply Changes";
             this.ApplyChangesButton.UseVisualStyleBackColor = true;
             this.ApplyChangesButton.Click += new System.EventHandler(this.ApplyChangesButton_Click);
@@ -187,7 +187,7 @@
             this.BackupLocationLabel.Location = new System.Drawing.Point(12, 277);
             this.BackupLocationLabel.Name = "BackupLocationLabel";
             this.BackupLocationLabel.Size = new System.Drawing.Size(377, 15);
-            this.BackupLocationLabel.TabIndex = 14;
+            this.BackupLocationLabel.TabIndex = 12;
             this.BackupLocationLabel.Text = "Existing appmanifest backup location (where a backup will be placed):";
             // 
             // BackupLocationTextBox
@@ -196,14 +196,14 @@
             this.BackupLocationTextBox.Name = "BackupLocationTextBox";
             this.BackupLocationTextBox.PlaceholderText = "Click \"Browse...\" to select backup location...";
             this.BackupLocationTextBox.Size = new System.Drawing.Size(391, 23);
-            this.BackupLocationTextBox.TabIndex = 15;
+            this.BackupLocationTextBox.TabIndex = 13;
             // 
             // BackupLocationBrowseButton
             // 
             this.BackupLocationBrowseButton.Location = new System.Drawing.Point(409, 295);
             this.BackupLocationBrowseButton.Name = "BackupLocationBrowseButton";
             this.BackupLocationBrowseButton.Size = new System.Drawing.Size(75, 23);
-            this.BackupLocationBrowseButton.TabIndex = 16;
+            this.BackupLocationBrowseButton.TabIndex = 14;
             this.BackupLocationBrowseButton.Text = "Browse...";
             this.BackupLocationBrowseButton.UseVisualStyleBackColor = true;
             this.BackupLocationBrowseButton.Click += new System.EventHandler(this.BackupLocationBrowseButton_Click);
@@ -214,7 +214,7 @@
             this.label1.Location = new System.Drawing.Point(12, 331);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(472, 2);
-            this.label1.TabIndex = 17;
+            this.label1.TabIndex = 15;
             // 
             // MainWindow
             // 
