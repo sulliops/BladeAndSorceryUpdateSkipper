@@ -71,7 +71,7 @@ namespace Blade_and_Sorcery_Update_Skipper
 
             }
 
-            // Set the BackupLocationTextBox text to default location of C:\{currentUser}\Documents\Blade and Sorcery Update Skipper\
+            // Set the BackupLocationTextBox text to default location of C:\Users\[CURRENT_USER]\Documents\Blade and Sorcery Update Skipper\
             // Reference: https://stackoverflow.com/questions/30872229/how-can-i-get-the-location-of-a-users-documents-directory
             BackupLocationTextBox.Text = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
