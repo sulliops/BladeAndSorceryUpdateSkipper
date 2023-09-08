@@ -18,7 +18,7 @@ v1.1.0 uses a standard application installer from [Inno Setup](https://jrsoftwar
 
 Then, simply launch Blade and Sorcery Update Skipper whenever Steam shows an update is available. The tool will automatically disable auto-updating for Blade and Sorcery after the first successful run, and will create a folder containing a timestamped backup of the current appmanifest file. You can choose the location for the appmanifest backup, or stick with the default backup location in `C:\Users\[CURRENT_USER]\Documents\`.
 
-![Application screenshot](./Preview.png "Application screenshot")
+![Application screenshot](./Screenshot.png "Application screenshot")
 
 ----
 
