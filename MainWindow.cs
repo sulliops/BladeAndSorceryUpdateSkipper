@@ -499,6 +499,12 @@ namespace Blade_and_Sorcery_Update_Skipper
                     }
 
                 }
+                else
+                {
+
+                    return;
+
+                }
 
             }
 
