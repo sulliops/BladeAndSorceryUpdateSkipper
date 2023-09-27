@@ -14,7 +14,7 @@ This program is heavily inspired by the existing [BeatSaber_UpdateSkipper](https
 
 #### Using the tool:
 
-v1.1.0 uses a standard application installer from [Inno Setup](https://jrsoftware.org/isinfo.php), but the pre-compiled release can also be downloaded and extracted to any valid directory for use. You can build the executable yourself (see below), or download the latest release from the repository's [Releases](https://github.com/sulliops/BladeAndSorceryUpdateSkipper/releases) page.
+v1.1.1 uses a standard application installer from [Inno Setup](https://jrsoftware.org/isinfo.php), but the pre-compiled release can also be downloaded and extracted to any valid directory for use. You can build the executable yourself (see below), or download the latest release from the repository's [Releases](https://github.com/sulliops/BladeAndSorceryUpdateSkipper/releases) page.
 
 Then, simply launch Blade and Sorcery Update Skipper whenever Steam shows an update is available. The tool will automatically disable auto-updating for Blade and Sorcery after the first successful run, and will create a folder containing a timestamped backup of the current appmanifest file. You can choose the location for the appmanifest backup, or stick with the default backup location in `C:\Users\[CURRENT_USER]\Documents\`.
 
@@ -24,7 +24,7 @@ Then, simply launch Blade and Sorcery Update Skipper whenever Steam shows an upd
 
 #### Compiling:
 
-v1.1.0 is compiled using Visual Studio 2022's ".NET desktop development" suite of tools. The solution (.sln file) can be opened in Visual Studio 2022, and Blade and Sorcery Update Skipper can be built against the "Release | Any CPU" target.
+v1.1.1 is compiled using Visual Studio 2022's ".NET desktop development" suite of tools. The solution (.sln file) can be opened in Visual Studio 2022, and Blade and Sorcery Update Skipper can be built against the "Release | Any CPU" target.
 
 The tool is compatible with x86 and x64 installations of Windows by default, as Steam itself is a 32-bit application. Only Windows 10 and Windows 11 have been tested, although this should be enough given that most VR platforms only run on these operating system versions.
 
